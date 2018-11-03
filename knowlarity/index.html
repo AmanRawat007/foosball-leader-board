@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- for signs symbols -->
+  <link rel="stylesheet" href="css/bootstrap.css"> <!-- for layout -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>foosball-leader-board Admin Area</title>
+</head>
+<body>
+  <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse p-0">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" data-target="#mynavbar" data-toggle="collapse">
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <a href="index.html" class="navbar-brand mr-5">FOOSBALL 2018</a>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="index.html" class="nav-link active"> Dashboard</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="team_registered.php" class="nav-link"> Total Team Registered</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="leader_board.php" class="nav-link"> LeaderBoard</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3">
+            <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-user-circle-o"></i> Welcome  Admin
+            </a>
+            <div class="dropdown-menu">
+              <a href="team_registered.php" class="dropdown-item"><i class="fa fa-group"></i> Total Team Registered</a>
+              <a href="leader_board.php" class="dropdown-item"><i class="fa fa-binoculars"></i> LeaderBoard</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--header-->
+  <header id="main-header" class="bg-primary py-2 text-white">
+    <div class="container">
+      <div classs="row">
+        <div class="col-md-6">
+          <h1><i class="fa fa-gear"></i> Dashboard</h1>
+      </div>
+    </div>
+  </header>
+
+<!--Section1-->
+  <section id="sections" class="py-4 mb-4 bg-fadded">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <a href="#" class="btn btn-primary btn-block" data-toggle="modal"  data-target="#addTeam">
+            <i class="fa fa-user-plus"></i> Register Team
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" class="btn btn-primary btn-block" data-toggle="modal"  data-target="#addMatch">
+            <i class="fa fa-balance-scale"></i> Feed The Match Results
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--POSTS-->
+  <section id="posts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header">
+              <h4><b>Previous Year Winners</b></h4>
+            </div>
+            <table class="table table-striped">
+              <thead class="thead-inverse">
+                <tr>
+                  <th>#</th>
+                  <th>Team Name</th>
+                  <th>Member1</th>
+                  <th>Member2</th>
+                  <th>Year</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>make_it_simple</td>
+                  <td>Aman</td>
+                  <td>Aditya</td>
+                  <td>2017</td>
+                  <td>
+                    <a href="#" class="btn btn-secondary btn-block" data-toggle="modal"  data-target="#button1">
+                      <i class="fa fa-angle-double-right"></i> Deatil
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>amigos</td>
+                  <td>Anubhav</td>
+                  <td>Abhishek</td>
+                  <td>2016</td>
+                  <td>
+                    <a href="#" class="btn btn-secondary btn-block" data-toggle="modal"  data-target="#button2">
+                      <i class="fa fa-angle-double-right"></i> Deatil
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>simply_win</td>
+                  <td>Nishant</td>
+                  <td>Arpit</td>
+                  <td>2015</td>
+                  <td>
+                    <a href="#" class="btn btn-secondary btn-block" data-toggle="modal"  data-target="#button3">
+                      <i class="fa fa-angle-double-right"></i> Deatil
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="card-footer">
+              <h7 style="color:red;">Note1:-<i> Register now and play in the event and may be your team will be the next on the leaderboard for 2018.</i></h7>
+              <h7 style="color:red;">Note2:-<i> Make sure pop_ups are enabled for this site.</i></h7>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+
+          <div class="card card-info mb-3 text-center text-white">
+            <div class="card-block">
+              <h3>Total Team Registered</h3>
+              <h1 class="display-4"><i class="fa fa-group"></i> </h1>
+              <a href="team_registered.php" class="btn btn-sm btn-outline-secondary text-white">View</a>
+            </div>
+          </div>
+
+          <div class="card card-success mb-3 text-center text-white">
+            <div class="card-block">
+              <h3> Present LeaderBoard(2018)</h3>
+              <h1 class="display-4"><i class="fa fa-binoculars"></i></h1>
+              <a href="leader_board.php" class="btn btn-sm btn-outline-secondary text-white">View</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--Footer-->
+ <footer id="main-footer" class="text-center text-white bg-inverse mt-4  p-3">
+   <div class="container">
+     <div class="row">
+       <div class="col">
+         <p class="lead">Copyright 2018  &copy; Foosball</p>
+       </div>
+     <div>
+   </div>
+ </footer>
+
+
+
+<!--Posts "To Register Team" for Section1 created above -->
+  <div class="modal fade" id="addTeam">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white"> <!-- bg-success for different colour -->
+            <h5 class="modal-title">Fill Team Detail</h5> <!-- heading of the opened form -->
+            <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+
+          <form action="add_team.php" method="POST">
+
+            <div class="form-group">
+              <label for="title" class="form-control-label">Team Name</label>
+              <input type="text" name="tname" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="title" class="form-control-label">Team Moto</label>
+              <input type="text" name="tmoto" class="form-control">
+              <small class="from-text ftext-muted">Use only simple phrases not the whole sentence</small>
+            </div>
+            <div class="form-group">
+              <label for="title" class="form-control-label">Name of Member 1</label>
+              <input type="text" name="mem1" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="title" class="form-control-label">Name of Member 2</label>
+              <input type="text" name="mem2" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <input type="submit" value="Register" name="submit">
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Posts "To Feed Match Result"-->
+  <div class="modal fade" id="addMatch">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white"> <!-- bg-success for different colour -->
+            <h5 class="modal-title">Fill The Match Detail</h5> <!-- heading of the opened form -->
+            <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form action="update_detail.php" method="POST">
+
+            <div class="form-group">
+              <label for="title" class="form-control-label">Team-1</label>
+              <input type="text" name="team1" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="title" class="form-control-label">Team-1 Id</label>
+              <input type="text" name="id1" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="title" class="form-control-label">Team-2</label>
+              <input type="text" name="team2" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="title" class="form-control-label">Team-2 Id</label>
+              <input type="text" name="id2" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="category" class="form-control-label">Choose Winner</label>
+              <select name="choice" class="form-control">
+                <option>Team 1</option>
+                <option>Team 2</option>
+              </select>
+            </div>
+            <small class="from-text ftext-muted">Fill details only if both teams are registered for the event and moreover no updation will take place for wrong entries.</small>
+            <div class="modal-footer  ">
+              <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <input type="submit" value="Update Scores Of Both Teams" name="submit">
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- For Button 1-->
+  <div class="modal fade" id="button1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white"> <!-- bg-success for different colour -->
+            <h5 class="modal-title">2017 Winner</h5> <!-- heading of the opened form -->
+            <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-bordered">
+            <thead class="thead-inverse">
+              <tr>
+                <th>#Rank</th>
+                <th>Team Name</th>
+                <th>Moto</th>
+                <th>Member1</th>
+                <th>Member2</th>
+                <th>Year</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>make_it_simple</td>
+                <td>"Winner Winner Chicken Dinner"</td>
+                <td>Aman</td>
+                <td>Aditya</td>
+                <td>2017</td>
+                <td>530</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- For Button 2-->
+  <div class="modal fade" id="button2">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white"> <!-- bg-success for different colour -->
+            <h5 class="modal-title">2016 Winner</h5> <!-- heading of the opened form -->
+            <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-bordered">
+            <thead class="thead-inverse">
+              <tr>
+                <th>#Rank</th>
+                <th>Team Name</th>
+                <th>Moto</th>
+                <th>Member1</th>
+                <th>Member2</th>
+                <th>Year</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>amigos</td>
+                <td>"Aye hai to jeetke jaynge"</td>
+                <td>Anubhav</td>
+                <td>Abhishek</td>
+                <td>2016</td>
+                <td>550</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- For Button 3-->
+  <div class="modal fade" id="button3">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white"> <!-- bg-success for different colour -->
+            <h5 class="modal-title">2015 Winner</h5> <!-- heading of the opened form -->
+            <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-bordered">
+            <thead class="thead-inverse">
+              <tr>
+                <th>#Rank</th>
+                <th>Team Name</th>
+                <th>Moto</th>
+                <th>Member1</th>
+                <th>Member2</th>
+                <th>Year</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>simply_win</td>
+                <td>"we can and we will"</td>
+                <td>Nishant</td>
+                <td>Arpit</td>
+                <td>2015</td>
+                <td>500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
