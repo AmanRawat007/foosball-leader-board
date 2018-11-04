@@ -1,9 +1,6 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "foosball";
+include 'connect.php';
 
 $tn= $_POST['tname'];
 $tmot= $_POST['tmoto'];
