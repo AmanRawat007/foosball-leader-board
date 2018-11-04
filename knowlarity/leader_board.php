@@ -4,7 +4,8 @@
   <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- for signs symbols -->
   <link rel="stylesheet" href="css/bootstrap.css"> <!-- for layout -->
   <link rel="stylesheet" href="css/style.css">
-  <title>foosball-leader-board Admin Area</title>
+  <title>LeaderBoard</title>
+  <link rel="icon" type="image/png" href="pic.png" />
 </head>
 <body>
   <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse p-0">
