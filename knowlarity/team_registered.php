@@ -72,10 +72,7 @@
               <tbody>
 
                 <?php
-                  $servername = "localhost";
-                  $username = "root";
-                  $password = "";
-                  $dbname = "foosball";
+                  include 'connect.php';
                   $conn = new mysqli($servername, $username, $password, $dbname);
                   if ($conn->connect_error)
                   {
